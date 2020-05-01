@@ -14,5 +14,14 @@ def fibonicci_seq(num):
     series = [1]
 
 
-    while len(series):
+    while len(series) < num:
+        if len(series) == 1:
+            series.append(1)
+        else:
+            series.append(series[-1] + series[-2])
+    
+    #convert int to strings
+    for i in range(len(series)):
+        series[i] = str(series[i])
         
+    return(', '.join(series)) 
