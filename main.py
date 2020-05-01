@@ -25,3 +25,11 @@ def fibonicci_seq(num):
         series[i] = str(series[i])
         
     return(', '.join(series)) 
+
+
+def main():  # Wrapper function
+
+    print(fibonicci_seq(int(input('How many numbers do you need? '))))
+
+if __name__ == '__main__':
+    main()
